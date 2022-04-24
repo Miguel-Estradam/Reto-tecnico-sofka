@@ -3,7 +3,8 @@ export class Test {
   preguntaIndex = this.getRandomInt(0, 4);
   score = 0;
   preguntaCount = 0;
-
+  perdio = false;
+  Usuario = ' ';
   /**
    *
    * @param {Pregunta[]} preguntas
@@ -11,7 +12,16 @@ export class Test {
   constructor(preguntas) {
     this.preguntas = preguntas;
   }
-
+  
+  getUsuario(){
+    return this.Usuario;
+  }
+  setUsuario(usuario2){
+    this.Usuario = usuario2; 
+  }
+  estadoUsuario(){
+    return this.perdio;
+  }
   getPreguntasIndex() {
     return this.preguntas[this.preguntaIndex];
   }
@@ -27,7 +37,7 @@ export class Test {
       this.preguntaCount++;
       this.preguntaIndex = this.getRandomInt(0, 4) + this.preguntaCount * 5;
     } else {
-      this.preguntaCount = 5;
+      this.perdio = true;
     }
   }
 

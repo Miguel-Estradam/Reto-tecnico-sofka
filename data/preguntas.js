@@ -8,12 +8,12 @@ export const data = [
   },
   {
     texto: "Un compilador es :  ",
-    seleccion: ['El que permite traducir un programa escrito en un lenguaje de programación a lenguaje maquina?','un lenguaje de alto nivel','Una instrucción','Una directiva de pre procesamiento'],
+    seleccion: ['El que permite traducir un programa escrito en un lenguaje de programación a lenguaje maquina','un lenguaje de alto nivel','Una instrucción','Una directiva de pre procesamiento'],
     respuesta: "El que permite traducir un programa escrito en un lenguaje de programación a lenguaje maquina"
   },
   {
     texto: "¿Que son constantes?",
-    seleccion: ['Datos que varian','Datos que no cambian en el proceso','Datos regulares','Datos irregulares'],
+    seleccion: ['Datos que Varian','Datos que no cambian en el proceso','Datos regulares','Datos irregulares'],
     respuesta: "Datos que no cambian en el proceso",
   },
   {
@@ -34,17 +34,17 @@ export const data = [
   },
   {
     texto: "Entidad con atributos y comportamiento:",
-    seleccion: ['Clase','Objeto','Plantilla','Funcion'],
+    seleccion: ['Clase','Objeto','Plantilla','Función'],
     respuesta: "Objeto",
   },
   {
     texto: "En programación se utiliza para modelar un conjunto de objetos:",
-    seleccion: ['Plantilla','Objeto','Clase','Metodos'],
+    seleccion: ['Plantilla','Objeto','Clase','Métodos'],
     respuesta: "Clase",
   },
   {
     texto: "Se refieren a características principalmente físicas y de estado de un objeto:",
-    seleccion: ['Metodos','Operaciones','Atributos','Objetos'],
+    seleccion: ['Métodos','Operaciones','Atributos','Objetos'],
     respuesta: "Atributos",
   },
   {

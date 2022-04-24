@@ -1,0 +1,22 @@
+{
+  "name": "reto_tecnico_sofka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miguel-Estradam/Reto-tecnico-sofka.git"
+  },
+  "author": "Miguel Alejandro Muñoz Estrada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Miguel-Estradam/Reto-tecnico-sofka/issues"
+  },
+  "homepage": "https://github.com/Miguel-Estradam/Reto-tecnico-sofka#readme",
+  "dependencies": {
+    "firebase": "^9.6.10"
+  }
+}

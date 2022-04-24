@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test programacion orientada a objetos</title>
+    <title>Test de programación </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
@@ -13,21 +13,26 @@
   <body>
     <!-- Test-->
     <div id="test" class="test">
-      <h1>Test</h1>
+      <h1 id="titulo">Test</h1>
       <hr />
 
       <h1 id="texto"></h1>
-
+      
       <div id="preguntas"></div>
       
       <hr style="margin-top: 50px" />
 
       <footer>
-        <p id="progreso">proceso</p>
+        <p id="progreso">Pregunta 1 de 5</p>
+        <div id="salir">
+          <button class="buttonUsuarios" onclick="window.location.href='/index.html'">Salir</button>
+
       </footer>
     </div>
 
     <!-- Scripts -->
     <script src="./app-test.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
   </body>
 </html>

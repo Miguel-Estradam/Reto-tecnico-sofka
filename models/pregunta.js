@@ -1,14 +1,26 @@
 class Pregunta {
-    constructor(testo,seleccion,respuesta){
+    constructor(texto,seleccion,respuesta){
+        /**
+         * @param {string} texto  Es la pregunta 
+         * @param {string} seleccion  Son las posibles respuestas 
+         * @param {string} respuesta Es la respuesta corecta
+         */
+
+
         this.texto = texto;
         this.seleccion = seleccion;
         this.respuesta = respuesta;
     }
     //funcion respuesta correcta
-    respuestaCorrecta(){
-        return true;
+    /**
+   *
+   * @param {string} respuesta 
+   * @returns {boolean} 
+   */
+    respuestaCorrecta(respuesta){
+        return respuesta === this.respuesta;
     }
 }
 
-const pregunta = new Pregunta()
-console.log(pregunta)
+
+export { Pregunta };

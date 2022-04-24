@@ -1,3 +1,4 @@
+//Preguntas de nvl 1
 export const nivel1 = [
   {
     texto: "¿Qué son variables?",
@@ -15,13 +16,13 @@ export const nivel1 = [
     respuesta: "",
   },
   {
-    texto: "",
-    seleccion: "",
-    respuesta: "",
+    texto: "Que tipo de dato es c=12 ",
+    seleccion: ['Interger','Float','Char','String'],
+    respuesta: "Interger",
   },
   {
-    texto: "",
-    seleccion: "",
-    respuesta: "",
+    texto: "Que tipo de dato es B= ",
+    seleccion: ['Interger','Float','Char','String'],
+    respuesta: "Float",
   },
 ];

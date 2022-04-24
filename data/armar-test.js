@@ -1,7 +1,7 @@
 import {Pregunta} from '../models/Pregunta.js'
-import { nivel1 } from './nivel-1.js'
+import { data } from './preguntas.js'
 
-export const Preguntas = nivel1.map(
+export const Preguntas = data.map(
     (pregunta) =>
       new Pregunta(pregunta.texto, pregunta.seleccion, pregunta.respuesta)
   );

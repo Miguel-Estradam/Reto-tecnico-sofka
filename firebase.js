@@ -10,6 +10,8 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 let db = firebase.firestore();
+ 
+//Envio de ganadores a fire base
 
 const guardarGanador = (usuario) => {
   db.collection("Ganadores")
@@ -37,16 +39,17 @@ export const Fire = (usuario, score) => {
   guardarGanador(ganadores);
 };
 
+//get para la base de datos
 export const getScores = (usuario, score) => {
-   const scores = [];
-   return db.collection("Ganadores")
-  .get()
-  .then((querySnapshot) => {
-    querySnapshot.forEach((doc) => {
-      scores.push(doc.data());
+  const scores = [];
+  return db
+    .collection("Ganadores")
+    .get()
+    .then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        scores.push(doc.data());
+      });
+      scores.sort((a, b) => b.premio - a.premio);
+      return scores;
     });
-    console.log(scores)
-    console.log(scores.sort((a, b) =>  b.premio - a.premio));
-    return scores;
-  });
 };

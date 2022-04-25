@@ -4,14 +4,11 @@ import { UI } from "./models/UI.js";
 import { Fire } from "./firebase.js";
 const renderPage = async (test, ui, fire, usu) => {
   if (test.finalizar()) {
-    console.log(fire);
     fire(usu, test.score);
     ui.verScores(test.score,usu);
   } else if (test.estadoUsuario() == true) {
     ui.verPanelPerdedor();
-    console.log("perdio");
   } else {
-    console.log(usu);
     ui.verTexto(test.getPreguntasIndex().texto);
     ui.verSeleccion(test.getPreguntasIndex().seleccion, (selec) => {
       test.checkRespuesta(selec);
@@ -38,7 +35,6 @@ function main() {
   ui.crearUsuario(() => {
     const usuario = document.getElementById("nombre").value;
     test.setUsuario(usuario);
-    console.log("getUsuario", test.getUsuario());
     usu = test.getUsuario();
     if (usu == " ") {
       main();

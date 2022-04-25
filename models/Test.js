@@ -4,7 +4,7 @@ export class Test {
   score = 0;
   preguntaCount = 0;
   perdio = false;
-  Usuario = ' ';
+  Usuario = " ";
   puntos = 5;
   dolares = 5;
 
@@ -15,14 +15,14 @@ export class Test {
   constructor(preguntas) {
     this.preguntas = preguntas;
   }
-  
-  getUsuario(){
+
+  getUsuario() {
     return this.Usuario;
   }
-  setUsuario(usuario2){
-    this.Usuario = usuario2; 
+  setUsuario(usuario2) {
+    this.Usuario = usuario2;
   }
-  estadoUsuario(){
+  estadoUsuario() {
     return this.perdio;
   }
   getPreguntasIndex() {
@@ -39,10 +39,9 @@ export class Test {
     if (this.getPreguntasIndex().respuestaCorrecta(respuesta)) {
       this.preguntaCount++;
       this.dolares = this.preguntaCount * this.puntos;
-      
+
       this.preguntaIndex = this.getRandomInt(0, 4) + this.preguntaCount * 5;
       this.score = this.score + this.dolares;
-
     } else {
       this.perdio = true; //variable bolean creada para verificar el estado test
     }

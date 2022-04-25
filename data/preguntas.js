@@ -160,13 +160,14 @@ export const data = [
     respuesta: "Moment",
   },
   {
-    texto: "¿Con que libreria se pueden crear interfaces de usuario interactivas?",
+    texto:
+      "¿Con que libreria se pueden crear interfaces de usuario interactivas?",
     seleccion: ["Hammer", "Codemirror", "Redux", "React"],
     respuesta: "React",
   },
   {
-    texto: "¿Qué propiedad representa la longitud de cadena?",
-    seleccion: [".lenght", ".legth", ".length", ".lengh"],
-    respuesta: ".length",
+    texto: "¿Qué comando usamos para insertar una etiqueta HTML personalizada?",
+    seleccion: ["insertHTML", "insertOrderedList", "insertHorizontalRule", "insertImage"],
+    respuesta: "insertHTML",
   },
 ];

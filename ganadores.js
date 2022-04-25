@@ -1,17 +1,16 @@
 import { getScores } from "./firebase.js";
 
 async function mapScores() {
-  console.log("hola?");
   const scores = await getScores();
   let response = "";
-  for (let score of scores) {
+  for (let key in scores) {
     response += `<tr>
-      <td>${score.nombre}</td>
-      <td>${score.premio}</td>
+      <td>${parseInt(key)+1}</td>
+      <td>${scores[key].nombre}</td>
+      <td>${scores[key].premio}</td>
     </tr>`;
   }
   const ganadores = document.getElementById("ganadores");
-  console.log(response);
   ganadores.innerHTML = response;
 }
 

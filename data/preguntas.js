@@ -155,13 +155,13 @@ export const data = [
     respuesta: ".length",
   },
   {
-    texto: "¿Qué libreria de JavaScript se ayuda a trabajar con fechas?",
+    texto: "¿Qué librería de JavaScript se ayuda a trabajar con fechas?",
     seleccion: ["jQuery", "Moment", "Ramda", "MathJs"],
     respuesta: "Moment",
   },
   {
     texto:
-      "¿Con que libreria se pueden crear interfaces de usuario interactivas?",
+      "¿Con que librería se pueden crear interfaces de usuario interactivas?",
     seleccion: ["Hammer", "Codemirror", "Redux", "React"],
     respuesta: "React",
   },

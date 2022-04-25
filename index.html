@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    
   </head>
   <body>
     <!-- Test-->
@@ -16,7 +19,7 @@
       <h1 id="titulo">Test</h1>
       <hr />
 
-      <h1 id="texto"></h1>
+      <h2 id="texto"></h2>
       
       <div id="preguntas"></div>
       
@@ -25,14 +28,13 @@
       <footer>
         <p id="progreso">Pregunta 1 de 5</p>
         <div id="salir">
-          <button class="buttonUsuarios" onclick="window.location.href='/index.html'">Salir</button>
-
+          <button class="buttonUsuarios" onclick="window.location.href='/ganadores.html'">Ver Ganadores</button>
       </footer>
     </div>
 
     <!-- Scripts -->
     <script src="./app-test.js" type="module"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    
+    <script src="./firebase.js" type="module"></script>
   </body>
 </html>

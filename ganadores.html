@@ -9,17 +9,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
   </head>
   <body>
     <!-- Test-->
-    <div id="ganadores" class="test">
+    <div class="test">
       
-
-      <footer>
+        <h1>Ganadores</h1>
+        <table>
+          <thead>
+            <tr>
+                <th scope='col'>Usuario</th>
+                <th scope='col'>Puntaje</th>
+            </tr>
+          </thead>
+          <tbody id="ganadores">
+            
+          </tbody>
+        </table>
         
+      <footer>
+        <div id="salir">
+            <button class="buttonUsuarios" onclick="window.location.href='/index.html'">Volver al Test</button>
+            </div>
       </footer>
     </div>
 
     <!-- Scripts -->
+    <script src="firebase.js" type="module"></script>
+    <script src="ganadores.js" type="module"></script>
   </body>
 </html>
